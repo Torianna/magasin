@@ -1,10 +1,14 @@
 class AwesomeAccordion extends HTMLElement {
+
   constructor() {
+
     super();
+
     this.attachShadow({mode: 'open'});
 
     this.changeAccordion = this.changeAccordion.bind(this);
 
+    //defined HTML of the custom accordion
     const accordion = document.createElement('template');
     accordion.innerHTML = `
          <link rel="stylesheet" href="accordionCode.css">
@@ -23,12 +27,16 @@ class AwesomeAccordion extends HTMLElement {
 
     this.shadowRoot.appendChild(accordion.content.cloneNode(true));
 
+    //added listeners to buttons
     let button = this.shadowRoot.querySelector('button.accordion');
     button.addEventListener("click", (e) => this.changeAccordion(e))
+
+    //found panels with content of the accordion
     let panel = this.shadowRoot.querySelector('.panel');
     panel.style.height =  `${panel.scrollHeight}px`;
   }
 
+  //defined behaviour of the accordion after a click
   changeAccordion(e) {
     let accordion = this.shadowRoot.querySelector('.accordion');
     let icon = this.shadowRoot.querySelector('.arrow-pic');

@@ -1,75 +1,74 @@
 html * {
-     font-family: adobe-garamond-pro,serif;
- }
-
-body {
-    width: 300px;
+  font-family: adobe-garamond-pro, serif;
 }
 
-.accordion-wrapper{
-    width: 300px;
+body {
+  width: 300px;
+}
+
+.accordion-wrapper {
+  width: 300px;
 }
 
 .accordion {
-    color: #292929;
-    background-color: transparent;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-    display: flex;
-    font-size: 1.1rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    align-items: center;
+  color: #292929;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  display: flex;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  align-items: center;
 }
 
-.arrow-pic{
-    transition: transform 0.2s ease-in-out;
-    margin-left: auto;
-    color: white;
+.arrow-pic {
+  transition: transform 0.2s ease-in-out;
+  margin-left: auto;
+  color: white;
 }
 
-.logo{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.svg-icon{
-    width: 150px;
-    z-index: 2;
-    fill: #507f70;
-    background-color: white;
+.svg-icon {
+  width: 150px;
+  z-index: 2;
+  fill: #507f70;
+  background-color: white;
 }
 
-hr.dash {
-    border-top: 1px solid #507f70;
-    width: 100%;
+hr dash {
+  border-top: 1px solid #507f70;
+  width: 100%;
+}
+hr dash floating {
+  width: 100%;
+  position: absolute;
+  top: 60%;
 }
 
-hr.dash.floating {
-    width: 100%;
-    position: absolute;
-    top: 60%;
+.rotated {
+  transform: rotate(180deg);
 }
 
-.rotated{
-    transform: rotate(180deg);
+.accordion:hover, .accordion:hover i > svg {
+  color: #507f70;
 }
 
-.accordion:hover, .accordion:hover  i > svg {
-    color: #507f70;
-}
-
-/* Style the accordion panel. */
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
 
+/*# sourceMappingURL=accordionCode.css.map */
