@@ -1,5 +1,9 @@
 html * {
-    font-family: adobe-garamond-pro,serif;
+     font-family: adobe-garamond-pro,serif;
+ }
+
+body {
+    width: 300px;
 }
 
 .accordion-wrapper{
@@ -10,7 +14,6 @@ html * {
     color: #292929;
     background-color: transparent;
     cursor: pointer;
-    padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
@@ -20,7 +23,9 @@ html * {
     font-size: 1.1rem;
     letter-spacing: .1em;
     text-transform: uppercase;
+    align-items: center;
 }
+
 .arrow-pic{
     transition: transform 0.2s ease-in-out;
     margin-left: auto;
@@ -40,8 +45,6 @@ html * {
     fill: #507f70;
     background-color: white;
 }
-
-
 
 hr.dash {
     border-top: 1px solid #507f70;
