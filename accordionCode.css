@@ -46,12 +46,12 @@ body {
   background-color: white;
 }
 
-hr dash {
+hr.dash {
   border-top: 1px solid #507f70;
   width: 100%;
 }
-hr dash floating {
-  width: 100%;
+
+hr.dash.floating {
   position: absolute;
   top: 60%;
 }
